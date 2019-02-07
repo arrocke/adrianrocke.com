@@ -5,8 +5,10 @@
   "scripts": {
     "build:styles": "tailwind build ./src/css/styles.css -c ./tailwind.js -o ./dist/styles.css",
     "build:html": "pug -o ./dist -b ./src/html --silent ./src/html/pages",
-    "build": "rm -rf ./dist && npm run build:html && npm run build:styles",
-    "dev": "nodemon -w src --exec 'npm run build' -e 'pug css'"
+    "build:img": "mkdir -p ./dist/img && cp ./src/img/* ./dist/img/",
+    "build": "npm run build:html && npm run build:styles && npm run build:img",
+    "dev": "nodemon -w src --exec 'npm run build && http-server ./dist' -e 'pug css jpg png svg'",
+    "clean": "rm -rf ./dist"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/arrocke/adrianrocke.com#readme",
   "devDependencies": {
+    "http-server": "0.11.1",
     "nodemon": "1.18.9",
     "pug": "2.0.3",
     "pug-cli": "1.0.0-alpha6",

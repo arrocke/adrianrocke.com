@@ -1,0 +1,36 @@
+block params
+//- var title
+//- var hideLogo
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+    if title
+      title #{title} | Adrian Rocke
+    else
+      title Adrian Rocke
+
+    block styles
+      link(rel="stylesheet" href="./styles.css")
+
+    block head-scripts
+
+  body.bg-black.flex.flex-col.h-screen.font-sans
+    nav.flex.p-8.items-center
+      unless showLogo
+        img.logo.h-12.rounded-full.mr-4(src="./img/headshot.jpg")
+        span.text-3xl.text-white.font-bold ADRIAN ROCKE
+      div.flex-grow
+      a.nav-link(href="#") HOME
+      a.nav-link(href="#") ABOUT ME
+      a.nav-link(href="#") MY WORK
+    div.flex-grow
+      block content
+    footer
+
+
+    block body-scripts

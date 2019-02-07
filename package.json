@@ -1,0 +1,27 @@
+{
+  "name": "adrianrocke.com",
+  "version": "0.1.0",
+  "description": "Adrian Rocke's personal website.",
+  "scripts": {
+    "build:styles": "tailwind build ./src/css/styles.css -c ./tailwind.js -o ./dist/styles.css",
+    "build:html": "pug -o ./dist -b ./src/html --silent ./src/html/pages",
+    "build": "rm -rf ./dist && npm run build:html && npm run build:styles",
+    "dev": "nodemon -w src --exec 'npm run build' -e 'pug css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrocke/adrianrocke.com.git"
+  },
+  "author": "Adrian Rocke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrocke/adrianrocke.com/issues"
+  },
+  "homepage": "https://github.com/arrocke/adrianrocke.com#readme",
+  "devDependencies": {
+    "nodemon": "1.18.9",
+    "pug": "2.0.3",
+    "pug-cli": "1.0.0-alpha6",
+    "tailwindcss": "0.7.4"
+  }
+}

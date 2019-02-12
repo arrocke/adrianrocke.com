@@ -2,7 +2,8 @@
 @tailwind components;
 
 .nav-link {
-  @apply text-white text-lg font-bold mt-3 ml-4 mr-4 no-underline border-b-2 border-black pb-1;
+  @apply text-white text-lg font-bold ml-4 mr-4 no-underline border-b-2 border-black pb-1;
+  margin-bottom: 2px;
 }
 
 .nav-link:hover {

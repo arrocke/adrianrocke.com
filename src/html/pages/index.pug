@@ -1,4 +1,15 @@
 extends /base.pug
 
 block params
+  - var hideLogo = true
   - var title = 'Home'
+
+block content
+  div.flex-grow.flex.flex-col.items-center.justify-center.pb-10
+    div.flex.items-center
+      img.rounded-full.mr-8.w-48.h-48(src="./img/headshot.jpg")
+      h1.text-title Adrian Rocke
+    div.mt-8
+      p.text-center.text-lg(class="hover:text-white")
+        | I build cloud based applications
+    a.mt-8.border-white.border-4.rounded-lg.p-4.no-underline.text-white.font-bold(href="#") LET'S TALK

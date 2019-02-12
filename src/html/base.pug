@@ -19,18 +19,20 @@ html(lang="en")
 
     block head-scripts
 
-  body.bg-black.flex.flex-col.h-screen.font-sans
-    nav.flex.p-8.items-center
-      unless showLogo
+  body.bg-black.flex.flex-col.h-screen.font-sans.text-white
+    nav.flex.p-8.items-end
+      unless hideLogo
         img.logo.h-12.rounded-full.mr-4(src="./img/headshot.jpg")
-        span.text-3xl.text-white.font-bold ADRIAN ROCKE
+        span.text-3xl.font-bold.mb-2 ADRIAN ROCKE
       div.flex-grow
       a.nav-link(href="#") HOME
       a.nav-link(href="#") ABOUT ME
       a.nav-link(href="#") MY WORK
-    div.flex-grow
-      block content
-    footer
+      a.nav-link(href="#") CONTACT
+    block content
+      div.flex-grow
+    footer.p-4.text-sm
+      span Adrian Rocke © 2019 
 
 
     block body-scripts

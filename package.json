@@ -7,7 +7,7 @@
     "build:html": "pug -o ./dist -b ./src/html --silent ./src/html/pages",
     "build:img": "mkdir -p ./dist/img && cp ./src/img/* ./dist/img/",
     "build": "npm run build:html && npm run build:styles && npm run build:img",
-    "dev": "nodemon -w src --exec 'npm run build && http-server ./dist' -e 'pug css jpg png svg'",
+    "dev": "http-server ./dist & nodemon -w src --exec 'npm run build' -e 'pug css jpg png svg' && fg",
     "clean": "rm -rf ./dist"
   },
   "repository": {

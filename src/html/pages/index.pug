@@ -1,7 +1,7 @@
 extends /base.pug
 
 block params
-  - var hideLogo = true
+  - var hideLogo = false
   - var title = 'Home'
 
 block content
@@ -10,6 +10,6 @@ block content
       img.rounded-full.mr-8.w-48.h-48(src="./img/headshot.jpg")
       h1.text-title Adrian Rocke
     div.mt-8
-      p.text-center.text-lg(class="hover:text-white")
+      p.text-center.text-lg.hover_text-white
         | I build cloud based applications
     a.mt-8.border-white.border-4.rounded-lg.p-4.no-underline.text-white.font-bold(href="#") LET'S TALK

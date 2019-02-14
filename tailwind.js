@@ -435,7 +435,7 @@ module.exports = {
   options: {
     prefix: '',
     important: false,
-    separator: ':',
+    separator: '_',
   },
 
 }

@@ -1,13 +1,55 @@
 @tailwind preflight;
 @tailwind components;
 
+.nav-menu-btn {
+  @apply
+    mb-2
+    w-10 h-10
+    bg-white;
+}
+
+.nav-menu {
+  @apply
+    invisible
+    flex
+    absolute
+    flex-col items-end
+    mb-2;
+
+  right: 16px;
+  top: 80px;
+}
+
 .nav-link {
-  @apply text-white text-lg font-bold ml-4 mr-4 no-underline border-b-2 border-black pb-1;
+  @apply
+    ml-4 mr-4 mt-4
+    pb-1 
+    border-b-2 border-black 
+    text-white text-lg
+    font-bold
+    no-underline;
+
   margin-bottom: 2px;
 }
 
 .nav-link:hover {
   @apply border-white;
+}
+
+@screen lg {
+  .nav-menu-btn {
+    @apply hidden;
+  }
+
+  .nav-menu {
+    @apply visible block relative pin-none;
+  }
+
+  .nav-link {
+    @apply
+      w-auto;
+  }
+
 }
 
 @tailwind utilities;

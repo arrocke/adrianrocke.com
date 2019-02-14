@@ -20,15 +20,7 @@ html(lang="en")
     block head-scripts
 
   body.bg-black.flex.flex-col.h-screen.font-sans.text-white
-    nav.flex.p-8.items-end
-      unless hideLogo
-        img.logo.h-12.rounded-full.mr-4(src="./img/headshot.jpg")
-        span.text-3xl.font-bold.mb-2 ADRIAN ROCKE
-      div.flex-grow
-      a.nav-link(href="#") HOME
-      a.nav-link(href="#") ABOUT ME
-      a.nav-link(href="#") MY WORK
-      a.nav-link(href="#") CONTACT
+    include components/navigation.pug
     block content
       div.flex-grow
     footer.p-4.text-sm

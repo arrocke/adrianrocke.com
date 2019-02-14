@@ -1,0 +1,16 @@
+nav.flex.p-8.items-end
+  unless hideLogo
+    img.logo.h-12.rounded-full.mr-4(src="./img/headshot.jpg")
+    span.text-3xl.font-bold.mb-2 ADRIAN ROCKE
+  div.flex-grow.h-12
+  button.nav-menu-btn
+  div.nav-menu
+    a.nav-link(href="#") HOME
+    a.nav-link(href="#") ABOUT ME
+    a.nav-link(href="#") MY WORK
+    a.nav-link(href="#") CONTACT
+  script.
+    const menuButton = document.querySelector('.nav-menu-btn')
+    const menu = document.querySelector('.nav-menu')
+    menuButton.addEventListener('click', () => menu.classList.toggle('visible'))
+    window.addEventListener('click', e => e.target !== menuButton && menu.classList.remove('visible'))

@@ -1,7 +1,10 @@
 nav.flex.p-8.items-end
   unless hideLogo
-    img.logo.h-12.rounded-full.mr-4(src="./img/headshot.jpg")
-    span.text-3xl.font-bold.mb-2 ADRIAN ROCKE
+    img.h-12.rounded-full.mr-4(src="./img/headshot.jpg")
+    span.text-lg.sm_text-3xl.leading-none.font-bold.mb-2
+      | ADRIAN
+      | <br class="sm_hidden"/>
+      | ROCKE
   div.flex-grow.h-12
   button.nav-menu-btn
   div.nav-menu
@@ -12,5 +15,5 @@ nav.flex.p-8.items-end
   script.
     const menuButton = document.querySelector('.nav-menu-btn')
     const menu = document.querySelector('.nav-menu')
-    menuButton.addEventListener('click', () => menu.classList.toggle('visible'))
-    window.addEventListener('click', e => e.target !== menuButton && menu.classList.remove('visible'))
+    menuButton.addEventListener('click', () => menu.classList.toggle('show-menu'))
+    window.addEventListener('click', e => e.target !== menuButton && menu.classList.remove('show-menu'))

@@ -10,22 +10,31 @@
 
 .nav-menu {
   @apply
-    invisible
     flex
     absolute
     flex-col items-end
-    mb-2;
+    mb-2
+    pb-4
+    bg-black
+    overflow-y-hidden;
 
+  transition: max-height 0.25s ease-in-out;
+  max-height: 0;
   right: 16px;
   top: 80px;
+}
+
+.show-menu {
+  max-height: 200px;
 }
 
 .nav-link {
   @apply
     ml-4 mr-4 mt-4
     pb-1 
-    border-b-2 border-black 
+    border-b-2 border-transparent 
     text-white text-lg
+    leading-none
     font-bold
     no-underline;
 
@@ -42,7 +51,7 @@
   }
 
   .nav-menu {
-    @apply visible block relative pin-none;
+    @apply pb-0 h-auto block relative pin-none max-h-full;
   }
 
   .nav-link {

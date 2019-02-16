@@ -11,11 +11,20 @@ nav.flex.p-8.items-end
     a.nav-link(href="#") MY WORK
     a.nav-link(href="#") CONTACT
   script.
-    const menuButton = document.querySelector('.nav-menu-btn')
     const menu = document.querySelector('.nav-menu')
+    const menuButton = document.querySelector('.nav-menu-btn')
+
     menuButton.addEventListener('click', () => {
       menu.classList.toggle('show-menu')
       menu.classList.add('menu-transition')
+
+      setTimeout(() => menu.classList.remove('menu-transition'), 500)
     })
-    menuButton.addEventListener('transitionend', () => menu.classList.remove('menu-transition'))
-    window.addEventListener('click', e => e.target !== menuButton && menu.classList.remove('show-menu'))
+    window.addEventListener('click', e => {
+      if (e.target !== menuButton) {
+        menu.classList.remove('show-menu')
+        menu.classList.add('menu-transition')
+
+        setTimeout(() => menu.classList.remove('menu-transition'), 500)
+      }
+    })

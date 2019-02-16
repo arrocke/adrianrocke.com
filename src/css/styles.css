@@ -1,6 +1,15 @@
 @tailwind preflight;
 @tailwind components;
 
+.hero {
+  background: url(./img/hero.jpg) center center;
+  background-size: cover;
+}
+
+.hero-overlay {
+  background-color: #00000080;
+}
+
 .nav-menu-btn {
   @apply
     mb-2
@@ -18,7 +27,7 @@
     bg-black
     overflow-y-hidden;
 
-  top: 80px;
+  top: 88px;
   left: 0;
   right: 0;
   bottom: 0;

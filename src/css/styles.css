@@ -63,7 +63,7 @@
 
 @screen sm {
   .nav-menu {
-    @apply flex-row pb-2;
+    @apply flex-row pb-6;
 
     bottom: unset;
   }

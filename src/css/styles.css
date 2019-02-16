@@ -4,8 +4,10 @@
 .nav-menu-btn {
   @apply
     mb-2
-    w-10 h-10
-    bg-white;
+    w-10 h-10;
+
+  background: url(./img/icons/menu.svg) no-repeat center bottom;
+  background-size: 32px 32px;
 }
 
 .nav-menu {

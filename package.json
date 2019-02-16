@@ -5,7 +5,7 @@
   "scripts": {
     "build:styles": "tailwind build ./src/css/styles.css -c ./tailwind.js -o ./dist/styles.css",
     "build:html": "pug -o ./dist -b ./src/html --silent ./src/html/pages",
-    "build:img": "mkdir -p ./dist/img && cp ./src/img/* ./dist/img/",
+    "build:img": "cp -a ./src/img/* ./dist/img/",
     "build": "npm run build:html && npm run build:styles && npm run build:img",
     "dev": "http-server ./dist & nodemon -w src --exec 'npm run build' -e 'pug css jpg png svg' && fg",
     "clean": "rm -rf ./dist"

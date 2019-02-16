@@ -6,33 +6,39 @@
     mb-2
     w-10 h-10;
 
-  background: url(./img/icons/menu.svg) no-repeat center bottom;
-  background-size: 32px 32px;
+  background: url(./img/icons/menu.svg) no-repeat center 13px;
+  background-size: 24px;
 }
 
 .nav-menu {
   @apply
-    flex
+    invisible opacity-0
+    flex flex-col items-center justify-center
     absolute
-    flex-col items-end
-    mb-2
-    pb-4
     bg-black
     overflow-y-hidden;
 
-  transition: max-height 0.25s ease-in-out;
-  max-height: 0;
-  right: 16px;
   top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu-transition {
+  transition: opacity .4s;
+}
+
+.menu-transition:not(.show-menu) {
+  transition: opacity .4s, visibility 0s .4s;
 }
 
 .show-menu {
-  max-height: 200px;
+  @apply visible opacity-100;
 }
 
 .nav-link {
   @apply
-    ml-4 mr-4 mt-4
+    mx-4 my-2
     pb-1 
     border-b-2 border-transparent 
     text-white text-lg
@@ -40,11 +46,23 @@
     font-bold
     no-underline;
 
-  margin-bottom: 2px;
 }
 
 .nav-link:hover {
   @apply border-white;
+}
+
+@screen sm {
+  .nav-menu {
+    @apply flex-row pb-2;
+
+    bottom: unset;
+  }
+
+  .nav-link {
+    @apply
+      mt-4 mb-0
+  }
 }
 
 @screen lg {
@@ -53,14 +71,16 @@
   }
 
   .nav-menu {
-    @apply pb-0 h-auto block relative pin-none max-h-full;
+    @apply visible opacity-100 pb-0 relative pin-none max-h-full
+      mb-0 pb-0;
   }
 
   .nav-link {
     @apply
       w-auto;
-  }
 
+    margin-bottom: 2px;
+  }
 }
 
 @tailwind utilities;

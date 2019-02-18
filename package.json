@@ -1,0 +1,19 @@
+{
+  "name": "adrianrocke.com",
+  "version": "0.1.0",
+  "description": "Adrian Rocke's personal website.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrocke/adrianrocke.com.git"
+  },
+  "author": "Adrian Rocke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrocke/adrianrocke.com/issues"
+  },
+  "homepage": "https://github.com/arrocke/adrianrocke.com#readme",
+  "devDependencies": {
+    "pug": "^2.0.3"
+  }
+}

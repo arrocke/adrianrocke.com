@@ -11,20 +11,26 @@ const images = [
   'icons/menu.svg'
 ]
 
+const css = [
+  'common'
+]
+
 // Build all of a single asset type.
 const buildPages = () => Promise.all(pages.map(tasks.compilePage))
 const buildImages = () => Promise.all(images.map(tasks.copyImage))
+const buildCss = () => Promise.all(css.map(tasks.compileScss))
 
 // Build entire project.
-const all = () => Promise.all([ buildPages(), buildImages() ])
+const all = () => Promise.all([ buildPages(), buildImages(), buildCss() ])
 
 // Run build if executed as main module.
 if (require.main === module) {
-  all()
+  all().catch(console.error)
 }
 
 module.exports = {
   all,
   pages: buildPages,
-  images: buildImages 
+  images: buildImages,
+  css: buildCss
 }

@@ -12,7 +12,8 @@ const images = [
 ]
 
 const css = [
-  'common'
+  'common',
+  'util'
 ]
 
 // Build all of a single asset type.

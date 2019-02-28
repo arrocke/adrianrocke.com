@@ -1,3 +1,13 @@
 @tailwind preflight;
+
+a:visited {
+  color: inherit;
+}
+
 @tailwind components;
+
+@import '@/scss/components.scss';
+
 @tailwind utilities;
+
+@import '@/scss/utilities.scss';

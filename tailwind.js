@@ -179,6 +179,7 @@ module.exports = {
     'auto': 'auto',
     'cover': 'cover',
     'contain': 'contain',
+    '6': '1.5rem'
   },
 
   borderWidths: {

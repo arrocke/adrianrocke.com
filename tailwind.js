@@ -91,6 +91,7 @@ module.exports = {
   colors: colors,
 
   screens: {
+    'xs': '380px',
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
@@ -182,7 +183,6 @@ module.exports = {
     'auto': 'auto',
     'cover': 'cover',
     'contain': 'contain',
-    '6': '1.5rem'
   },
 
   borderWidths: {

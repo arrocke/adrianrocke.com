@@ -1,17 +1,17 @@
 <template>
-  <header class="flex p-6 lg:p-8 items-end">
+  <header class="flex p-4 sm:p-6 lg:p-8 items-end">
     <img
       src="@/assets/headshot.jpg"
       alt="Adrian Rocke's face"
       class="h-12 rounded-full mr-4"
     />
-    <span class="text-lg sm:text-3xl leading-none font-bold mb-2 mr-2">
+    <span class="text-xl xs:text-3xl leading-none font-bold mb-2 mr-2">
       ADRIAN ROCKE
     </span>
     <div class="flex-grow h-12" />
     <button
       type="button"
-      class="mb-2 w-10 h-10 bg-menu bg-6 bg-no-repeat bg-bottom lg:hidden"
+      class="mb-2 w-10 h-10 bg-menu bg-no-repeat bg-bottom lg:hidden"
       @click="toggleMenu"
     />
     <nav

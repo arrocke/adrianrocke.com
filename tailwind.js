@@ -144,6 +144,9 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '3.5rem',    // 56px
+    '7xl': '4rem',      // 64px
+    '8xl': '6rem',      // 96px
   },
 
   fontWeights: {

@@ -13,17 +13,10 @@
   @apply border-white;
 }
 
-
-@screen sm {
-  .nav-link {
-    @apply
-      mt-4 mb-0;
-  }
-}
-
 @screen lg {
   .nav-link {
     @apply
+      mt-4 mb-0
       w-auto;
 
     margin-bottom: 2px;

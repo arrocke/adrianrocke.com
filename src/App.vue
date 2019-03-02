@@ -1,6 +1,7 @@
 <template>
-  <div id="app" class="flex flex-col font-sans text-white">
+  <div id="app" class="flex flex-col font-sans text-white min-h-screen">
     <MainHeader />
+    <router-view />
   </div>
 </template>
 

@@ -3,6 +3,14 @@
   background-position: bottom 3px right 50%;
 }
 
+.bg-hero {
+  background-image: url('../assets/hero.jpg');
+}
+
+.bg-darken {
+  background-color: #00000080;
+}
+
 .transition-opacity {
   transition: opacity .4s;
 

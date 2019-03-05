@@ -1,6 +1,6 @@
 @tailwind preflight;
 
-a:visited {
+a, a:visited, a:hover, a:active {
   color: inherit;
 }
 

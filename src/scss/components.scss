@@ -22,3 +22,19 @@
     margin-bottom: 2px;
   }
 }
+
+.section {
+  @apply w-full py-6 px-6;
+}
+
+@screen sm {
+  .section {
+    @apply px-22;
+  }
+}
+
+@screen lg {
+  .section {
+    @apply px-24;
+  }
+}

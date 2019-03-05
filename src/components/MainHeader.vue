@@ -1,5 +1,5 @@
 <template>
-  <header class="flex p-4 sm:p-6 lg:p-8 items-end">
+  <header class="flex px-6 py-4 sm:py-6 lg:p-8 items-end">
     <img
       src="@/assets/headshot.jpg"
       alt="Adrian Rocke's face"
@@ -24,16 +24,28 @@
       @transitionend="finishTransition"
     >
       <ul
-        class="list-reset h-full flex flex-col items-center justify-center bg-black overflow-y-hidden lg:flex-row lg:pin-none lg:mb-0 lg:pb-0"
+        class="list-reset h-full flex flex-col items-center bg-black justify-center overflow-y-hidden lg:flex-row lg:pin-none lg:mb-0 lg:pb-0"
       >
         <li class="nav-link">
           <router-link :to="{ name: 'home' }" class="no-underline"
             >HOME</router-link
           >
         </li>
-        <li class="nav-link"><a herf="#" class="no-underline">ABOUT ME</a></li>
-        <li class="nav-link"><a href="#" class="no-underline">MY WORK</a></li>
-        <li class="nav-link"><a href="#" class="no-underline">CONTACT</a></li>
+        <li class="nav-link">
+          <router-link :to="{ name: 'home' }" class="no-underline"
+            >ABOUT ME</router-link
+          >
+        </li>
+        <li class="nav-link">
+          <router-link :to="{ name: 'my-work' }" class="no-underline"
+            >MY WORK</router-link
+          >
+        </li>
+        <li class="nav-link">
+          <router-link :to="{ name: 'home' }" class="no-underline"
+            >CONNECT</router-link
+          >
+        </li>
       </ul>
     </nav>
   </header>

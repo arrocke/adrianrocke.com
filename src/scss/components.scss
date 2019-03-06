@@ -25,6 +25,30 @@
 
 .section {
   @apply w-full py-6 px-6;
+
+  p {
+    @apply mt-3 leading-normal;
+  }
+
+  ul {
+    @apply mt-3 leading-normal list-reset;
+  }
+
+  h3 {
+    @apply mt-6;
+  }
+
+  a {
+    @apply mt-2 inline-block;
+  }
+
+  h2 > * {
+    @apply align-middle;
+  }
+  
+  img {
+    @apply mr-4;
+  }
 }
 
 @screen sm {

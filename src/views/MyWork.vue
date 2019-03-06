@@ -45,7 +45,7 @@
         I've used what I've learned to design and build this site.
       </p>
       <h3 class="mt-6">Tech</h3>
-      <ul>
+      <ul class="mt-3 leading-normal list-reset">
         <li><span class="font-bold text-sm">FRONTEND:</span> Vue, Sass, Tailwind</li>
         <li><span class="font-bold text-sm">DEVELOPMENT:</span> Vue-CLI</li>
       </ul>

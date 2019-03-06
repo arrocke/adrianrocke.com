@@ -13,7 +13,7 @@
       </div>
       <div class="mt-8">
         <p class="text-center text-lg hover:text-white">
-          I need a more creative tagline...
+          I'm a freelance software developer specializing in cloud applications.
         </p>
       </div>
       <a

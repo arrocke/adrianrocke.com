@@ -15,14 +15,19 @@
       @click="toggleMenu"
     />
     <nav
-      class="absolute mt-20 pin lg:pin-none lg:static lg:mt-0 lg:opacity-100 lg:visible"
+      class="fixed pin lg:pin-none lg:static lg:mt-0 lg:opacity-100 lg:visible"
       :class="{
         invisible: !menuVisible,
         'opacity-0': !menuVisible,
         'transition-opacity': transitioning
       }"
-      @transitionend="finishTransition"
+      @click="hideMenu"
     >
+      <button
+        type="button"
+        class="mt-4 mr-6 w-10 h-10 bg-menu bg-no-repeat bg-bottom absolute pin-t pin-r lg:hidden"
+        @click="toggleMenu"
+      />
       <ul
         class="list-reset h-full flex flex-col items-center bg-black justify-center overflow-y-hidden lg:flex-row lg:pin-none lg:mb-0 lg:pb-0"
       >
@@ -64,9 +69,21 @@ export default {
     toggleMenu() {
       this.menuVisible = !this.menuVisible;
       this.transitioning = true;
+      this.setScrollLock()
+      setTimeout(() => {
+        this.transitioning = false;
+      }, 1000)
     },
-    finishTransition() {
-      this.transitioning = false;
+    hideMenu() {
+      this.menuVisible = false;
+      this.transitioning = true;
+      this.setScrollLock()
+      setTimeout(() => {
+        this.transitioning = false;
+      }, 1000)
+    },
+    setScrollLock() {
+      document.body.classList.toggle('overflow-hidden', this.menuVisible)
     }
   }
 };

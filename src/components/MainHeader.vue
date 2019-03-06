@@ -25,7 +25,7 @@
     >
       <button
         type="button"
-        class="mt-4 mr-6 w-10 h-10 bg-menu bg-no-repeat bg-bottom absolute pin-t pin-r lg:hidden"
+        class="mt-4 mr-6 w-10 h-10 bg-menu bg-no-repeat bg-bottom absolute pin-t pin-r md:mt-6 lg:hidden"
         @click="toggleMenu"
       />
       <ul
@@ -37,18 +37,13 @@
           >
         </li>
         <li class="nav-link">
-          <router-link :to="{ name: 'home' }" class="no-underline"
+          <router-link :to="{ name: 'about-me' }" class="no-underline"
             >ABOUT ME</router-link
           >
         </li>
         <li class="nav-link">
           <router-link :to="{ name: 'my-work' }" class="no-underline"
             >MY WORK</router-link
-          >
-        </li>
-        <li class="nav-link">
-          <router-link :to="{ name: 'home' }" class="no-underline"
-            >CONNECT</router-link
           >
         </li>
       </ul>

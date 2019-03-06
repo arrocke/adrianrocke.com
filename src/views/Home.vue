@@ -16,10 +16,10 @@
           I need a more creative tagline...
         </p>
       </div>
-      <router-link
-        :to="{ name: 'home' }"
+      <a
+        href="mailto:me@adrianrocke.com"
         class="mt-8 border-white border-4 rounded-lg p-4 no-underline text-white font-bold"
-        >LET'S TALK</router-link
+        >LET'S TALK</a
       >
     </div>
   </main>

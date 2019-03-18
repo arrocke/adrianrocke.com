@@ -4,6 +4,7 @@
   "builds": [
       { "src": "package.json", "use": "@now/static-build" }
   ],
+  "alias": ["adrianrocke.com"],
   "routes": [
     {"src": "^/js/(.*)", "dest": "/js/$1"},
     {"src": "^/css/(.*)", "dest": "/css/$1"},

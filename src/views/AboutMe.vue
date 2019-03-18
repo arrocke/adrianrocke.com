@@ -33,7 +33,7 @@
       <h3 class="mt-6">Hobbies</h3>
       <p class="mt-3 leading-normal">
         When I'm not coding, I enjoy practicing the piano. I took lessons from kindergarden all the way through high school graduation.
-        I've also spent the last year or so learning biblical greek and hebrew. I enjoy reading books, ranging from science fiction to math to theology.
+        I've also spent the last year or so learning Biblical Greek and Hebrew. I enjoy reading books, ranging from science fiction to math to theology.
       </p>
     </section>
   </main>

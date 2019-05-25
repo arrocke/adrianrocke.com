@@ -1,15 +1,5 @@
 @tailwind preflight;
 
-button {
-  border: none;
-  border-radius: 0;
-  background-color: inherit;
-}
-
-a, a:visited, a:hover, a:active {
-  color: inherit;
-}
-
 @tailwind components;
 
 .nav-link {
@@ -41,6 +31,7 @@ a, a:visited, a:hover, a:active {
 @tailwind utilities;
 
 .bg-menu {
+  @apply bg-transparent;
   background-image: url('~assets/images/icons/menu.svg');
   background-position: bottom 4px right 50%;
   background-size: 1.375rem;

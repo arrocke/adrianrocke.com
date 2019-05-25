@@ -13,6 +13,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       alias: {
         "~components": path.resolve(__dirname, "src/components"),
         "~assets": path.resolve(__dirname, "src/assets"),
+        "~styles": path.resolve(__dirname, "src/styles"),
         // For css only
         "assets": path.resolve(__dirname, "src/assets")
       }

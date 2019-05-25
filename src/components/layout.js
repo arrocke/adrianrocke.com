@@ -26,15 +26,27 @@ const Layout = ({ children }) => (
               name
               to
             }
+            copyright
+            socialLinks {
+              href
+              src
+              alt
+            }
           }
         }
       }
     `}
     render={data => (
       <div className="absolute inset-0 w-screen h-screen flex flex-col font-sans text-white bg-black">
-        <Header siteTitle={data.site.siteMetadata.title} navLinks={data.site.siteMetadata.navLinks} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          navLinks={data.site.siteMetadata.navLinks}
+        />
         {children}
-        <Footer />
+        <Footer
+          socialLinks={data.site.siteMetadata.socialLinks}
+          copyright={data.site.siteMetadata.copyright}
+        />
       </div>
     )}
   />

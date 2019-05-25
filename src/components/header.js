@@ -19,7 +19,7 @@ const Header = ({siteTitle, navLinks}) => {
 
   const links = navLinks.map(
     ({name, to}) =>
-      <Link to={to} className="nav-link">{name.toUpperCase()}</Link>
+      <Link key={to} to={to} className="nav-link">{name.toUpperCase()}</Link>
   )
 
   return <header className="flex px-6 py-4 sm:py-6 lg:p-8 items-end">
@@ -54,10 +54,10 @@ const Header = ({siteTitle, navLinks}) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  navLinks: PropTypes.arrayOf({
+  navLinks: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     to: PropTypes.string
-  })
+  }))
 }
 
 Header.defaultProps = {

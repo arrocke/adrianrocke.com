@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Adrian Rocke`,
+    copyright: `Adrian Rocke`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     navLinks: [
@@ -15,6 +16,18 @@ module.exports = {
       {
         name: 'My Work',
         to: '/my-work'
+      }
+    ],
+    socialLinks: [
+      {
+        src: 'twitter.svg',
+        href: '//twitter.com/adrianscript',
+        alt: 'Twitter'
+      },
+      {
+        src: 'github.svg',
+        href: '//github.com/arrocke',
+        alt: 'Github'
       }
     ]
   },

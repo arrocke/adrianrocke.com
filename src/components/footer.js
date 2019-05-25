@@ -1,26 +1,36 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import twitter from "~assets/images/icons/twitter.svg"
-import github from "~assets/images/icons/github.svg"
+import PropTypes from "prop-types"
 
-const Footer = ({  }) => (
-  <footer className="px-6 lg:px-8 py-3 text-sm flex items-center">
-    <a href="//twitter.com/adrianscript">
-      <img className="p-1 w-10 h-10" src={twitter} alt="Twitter" />
-    </a>
-    <a href="//github.com/arrocke">
-      <img className="p-1 w-10 h-10" src={github} alt="Github" />
-    </a>
+const Footer = ({socialLinks, copyright}) => {
+  const links = socialLinks.map(
+    ({src, alt, href}) => 
+      <a key={href} href={href}>
+        <img
+          className="p-1 w-10 h-10"
+          src={require(`~assets/images/icons/${src}`)}
+          alt={alt}
+        />
+      </a>
+  )
+  return <footer className="px-6 lg:px-8 py-3 text-sm flex items-center">
+    {links}
     <span className="flex-grow"/>
-    <span>Adrian Rocke © 2019</span>
+    <span>{copyright} © {new Date().getFullYear()}</span>
   </footer>
-)
+}
 
 Footer.propTypes = {
+  socialLinks: PropTypes.arrayOf(PropTypes.shape({
+    src: PropTypes.string,
+    href: PropTypes.string,
+    alt: PropTypes.string,
+  })),
+  copyright: PropTypes.string
 }
 
 Footer.defaultProps = {
+  socialLinks: [],
+  copyright: ''
 }
 
 export default Footer

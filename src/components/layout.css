@@ -1,19 +1,26 @@
 @tailwind preflight;
 
+button {
+  border: none;
+  border-radius: 0;
+  background-color: inherit;
+}
+
 a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
 @tailwind components;
 
-nav-link {
+.nav-link {
   @apply
     inline-block
     mx-4 my-2
     pb-1 
-    border-b-2 border-transparent 
+    border-solid border-0 border-b-2 border-transparent
     text-white text-lg
     leading-none
+    no-underline
     font-bold;
 }
 

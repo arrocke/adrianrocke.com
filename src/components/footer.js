@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 const Footer = ({socialLinks, copyright}) => {
   const links = socialLinks.map(
@@ -17,20 +16,6 @@ const Footer = ({socialLinks, copyright}) => {
     <span className="flex-grow"/>
     <span>{copyright} © {new Date().getFullYear()}</span>
   </footer>
-}
-
-Footer.propTypes = {
-  socialLinks: PropTypes.arrayOf(PropTypes.shape({
-    src: PropTypes.string,
-    href: PropTypes.string,
-    alt: PropTypes.string,
-  })),
-  copyright: PropTypes.string
-}
-
-Footer.defaultProps = {
-  socialLinks: [],
-  copyright: ''
 }
 
 export default Footer

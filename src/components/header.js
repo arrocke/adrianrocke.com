@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState } from "react"
 import headshot from "~assets/images/headshot.jpg"
 
@@ -50,19 +49,6 @@ const Header = ({siteTitle, navLinks}) => {
       </div>
     </nav>
   </header>
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-  navLinks: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    to: PropTypes.string
-  }))
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-  navLinks: []
 }
 
 export default Header

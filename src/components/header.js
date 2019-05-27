@@ -27,7 +27,7 @@ const Header = ({siteTitle, navLinks}) => {
       alt="Adrian Rocke's face"
       className="h-12 rounded-full mr-4"
     />
-    <span className="text-xl xs:text-3xl leading-none font-bold mb-2 mr-2">
+    <span className="text-xl xs:text-3xl leading-none font-bold mb-2">
       {siteTitle.toUpperCase()}
     </span>
     <div className="flex-grow h-12" />

@@ -6,7 +6,7 @@ const Footer = ({socialLinks, copyright}) => {
       <a key={href} href={href}>
         <img
           className="p-1 w-10 h-10"
-          src={require(`~assets/images/icons/${src}`)}
+          src={require(`~assets/icons/${src}`)}
           alt={alt}
         />
       </a>

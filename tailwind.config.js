@@ -10,6 +10,12 @@ module.exports = {
     extend: {
       colors: {
         'black': '#22292f'
+      },
+      height: {
+        '160': '40rem'
+      },
+      maxHeight: {
+        '3/4-screen': '75vh'
       }
     }
   },

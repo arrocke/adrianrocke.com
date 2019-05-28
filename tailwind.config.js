@@ -16,6 +16,9 @@ module.exports = {
       },
       maxHeight: {
         '3/4-screen': '75vh'
+      },
+      padding: {
+        '22': '5.5rem'
       }
     }
   },

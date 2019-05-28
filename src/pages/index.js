@@ -7,14 +7,14 @@ import headshot from '~assets/images/headshot.jpg'
 const IndexPage = () => {
   return <Layout>
     <SEO title="Home" />
-    <main className="flex-grow bg-cover bg-center bg-hero flex items-stretch">
+    <main className="bg-cover bg-center bg-hero flex items-stretch">
       <div className="bg-darken py-12 px-6 flex-grow flex flex-col items-center justify-center">
         <div className="flex items-center flex-col sm:flex-row">
           <img
             src={headshot}
             alt="Adrian Rocke's face"
             className="rounded-full sm:mr-6 lg:mr-8 w-24 h-24 sm:w-32 sm:h-32 lg:w-48 lg:h-48" />
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold">
             Adrian Rocke
           </h1>
         </div>

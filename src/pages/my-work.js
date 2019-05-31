@@ -7,7 +7,7 @@ import pivot from '~assets/images/pivot.png'
 
 const MyWorkPage = () => {
   return <Layout>
-    <SEO title="About Me" />
+    <SEO title="My Work" />
     <main>
       <h1 className="page-title">
         <div className="inner-content">My Work</div></h1>

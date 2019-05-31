@@ -22,12 +22,7 @@ const Header = ({siteTitle, navLinks}) => {
   )
 
   return <header className="flex px-6 py-4 sm:py-6 lg:p-8 items-end">
-    <img
-      src={headshot}
-      alt="Adrian Rocke's face"
-      className="h-12 rounded-full mr-4"
-    />
-    <span className="text-xl xs:text-3xl leading-none font-bold mb-2">
+    <span className="text-2xl xs:text-3xl leading-none font-bold mb-2">
       {siteTitle.toUpperCase()}
     </span>
     <div className="flex-grow h-12" />

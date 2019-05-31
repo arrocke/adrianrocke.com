@@ -51,15 +51,16 @@ const MyWorkPage = () => {
           <a href="//adrianrocke.com" className="mt-2 inline-block text-blue-600 font-bold">adrianrocke.com</a>
           <p className="paragraph">
             While I have no formal education in design, I have picked up a few tricks along the way.
-            I've used what I've learned to design and build this site.
+            I've used what I've learned to design and build this site. I also took the opportunity to
+            use new tech that I had not used before to expand my skills.
           </p>
           <h3 className="paragraph-title mt-6">Tech</h3>
           <ul className="paragraph">
             <li>
-              <span className="font-bold text-sm">FRONTEND:</span> Vue, Sass, Tailwind
+              <span className="font-bold text-sm">FRONTEND:</span> React, Tailwind, GraphQL
             </li>
             <li>
-              <span className="font-bold text-sm">DEVELOPMENT:</span> Vue-CLI
+              <span className="font-bold text-sm">DEVELOPMENT:</span> Gatsby, Zeit Now
             </li>
           </ul>
         </div>

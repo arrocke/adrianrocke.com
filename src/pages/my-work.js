@@ -1,11 +1,29 @@
 import React from "react"
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image/withIEPolyfill'
 
 import Layout from "~components/layout"
 import SEO from "~components/seo"
-import headshot from '~assets/images/headshot.jpg'
-import pivot from '~assets/images/pivot.png'
 
 const MyWorkPage = () => {
+  const { pivot, adrian } = useStaticQuery(graphql`
+    query {
+      pivot: file(relativePath: { eq: "pivot.png" }) {
+        childImageSharp {
+          fixed(width: 32, height: 32) {
+            ...GatsbyImageSharpFixed_noBase64
+          }
+        }
+      }
+      adrian: file(relativePath: { eq: "headshot.jpg" }) {
+        childImageSharp {
+          fixed(width: 32, height: 32) {
+            ...GatsbyImageSharpFixed_noBase64
+          }
+        }
+      }
+    }
+  `)
   return <Layout>
     <SEO title="My Work" />
     <main>
@@ -14,7 +32,7 @@ const MyWorkPage = () => {
       <section className="page-section">
         <div className="inner-content">
           <h2 className="section-title">
-            <img src={pivot} alt="Pivot Interactives Logo" className="inline-block align-middle mr-4 w-8 h-8" />
+            <Img fixed={pivot.childImageSharp.fixed} alt="Pivot Interactives Logo" className="inline-block align-middle mr-4 w-8 h-8" />
             <span className="align-middle">Pivot Interactives</span>
           </h2>
           <a href="//www.pivotinteractives.com" className="mt-2 inline-block text-blue-600 font-bold">www.pivotinteractives.com</a>
@@ -45,7 +63,7 @@ const MyWorkPage = () => {
       <section className="page-section">
         <div className="inner-content">
           <h2 className="section-title">
-            <img src={headshot} alt="Adrian Rocke's Headshot" className="inline-block rounded-full align-middle mr-4 w-8 h-8" />
+            <Img fixed={adrian.childImageSharp.fixed} alt="Adrian Rocke's Headshot" className="inline-block rounded-full align-middle mr-4 w-8 h-8" />
             <span className="align-middle">This Site</span>
           </h2>
           <a href="//adrianrocke.com" className="mt-2 inline-block text-blue-600 font-bold">adrianrocke.com</a>

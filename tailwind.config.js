@@ -11,8 +11,8 @@ module.exports = {
       colors: {
         'black': '#22292f'
       },
-      height: {
-        '160': '40rem'
+      width: {
+        '120': '30rem'
       },
       maxHeight: {
         '3/4-screen': '75vh'

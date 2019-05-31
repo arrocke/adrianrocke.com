@@ -1,10 +1,22 @@
 import React from "react"
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image/withIEPolyfill'
 
 import Layout from "~components/layout"
 import SEO from "~components/seo"
-import me from '~assets/images/en-gedi.jpg'
 
 const AboutMePage = () => {
+  const { enGedi } = useStaticQuery(graphql`
+    query {
+      enGedi: file(relativePath: { eq: "en-gedi.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 544) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
+  `)
   return <Layout>
     <SEO title="About Me" />
     <main>
@@ -13,10 +25,11 @@ const AboutMePage = () => {
       </h1>
       <section className="page-section">
         <div className="inner-content">
-          <img
-            src={me}
+          <Img
+            fluid={enGedi.childImageSharp.fluid}
             alt="Adrian Rocke At En Gedi, Israel with the Dead Sea in the background."
-            className="block max-w-full max-h-3/4-screen mx-auto mb-6 lg:h-160 lg:float-right lg:mt-1 lg:ml-6"
+            className="block h-full max-w-full max-h-3/4-screen mx-auto mb-6 lg:w-120 lg:float-right lg:mt-1 lg:ml-6"
+            objectFit="scale-down"
           />
           <h3 className="paragraph-title">Getting Started</h3>
           <p className="paragraph">

@@ -32,7 +32,7 @@ const Header = ({siteTitle, navLinks}) => {
       aria-label="toggle menu"
     />
     <nav
-      className={`fixed inset-0 lg:inset-auto lg:static lg:mt-0 lg:opacity-100 lg:visible ${menuVisible ? '' : 'invisible opacity-0'} ${transitioning ? 'transition-opacity' : ''}`}
+      className={`fixed inset-0 z-20 lg:inset-auto lg:static lg:mt-0 lg:opacity-100 lg:visible ${menuVisible ? '' : 'invisible opacity-0'} ${transitioning ? 'transition-opacity' : ''}`}
       onClick={hideMenu}
       onTransitionEnd={() => setTransitioning(false)}
     >

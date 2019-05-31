@@ -14,7 +14,7 @@ const IndexPage = () => {
             src={headshot}
             alt="Adrian Rocke's face"
             className="rounded-full sm:mr-6 lg:mr-8 w-24 h-24 sm:w-32 sm:h-32 lg:w-48 lg:h-48" />
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-center">
             Adrian Rocke
           </h1>
         </div>

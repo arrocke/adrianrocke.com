@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
-import headshot from "~assets/images/headshot.jpg"
 
 const Header = ({siteTitle, navLinks}) => {
   const [menuVisible, setMenuVisibility] = useState(false)

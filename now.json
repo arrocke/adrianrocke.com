@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "adrianrocke.com",
-  "alias": ["adrianrocke.com"],
+  "alias": ["staging.adrianrocke.com"],
   "builds": [
     {
       "src": "package.json",

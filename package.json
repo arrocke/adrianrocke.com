@@ -2,7 +2,7 @@
   "name": "adrianrocke.com",
   "private": true,
   "description": "Adrian Rocke's personal website.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Adrian Rocke <me@adrianrocke.com>",
   "dependencies": {
     "gatsby": "2.5.5",

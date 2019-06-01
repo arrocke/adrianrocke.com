@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "name": "vue",
-  "builds": [
-      { "src": "package.json", "use": "@now/static-build" }
-  ],
+  "name": "adrianrocke.com",
   "alias": ["adrianrocke.com"],
-  "routes": [
-    {"src": "^/js/(.*)", "dest": "/js/$1"},
-    {"src": "^/css/(.*)", "dest": "/css/$1"},
-    {"src": "^/img/(.*)", "dest": "/img/$1"},
-    {"src": "^/favicon.ico", "dest": "/favicon.ico"},
-    {"src": ".*", "dest": "/index.html"}
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
   ]
 }

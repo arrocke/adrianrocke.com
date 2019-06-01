@@ -1,29 +1,46 @@
 {
   "name": "adrianrocke.com",
-  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "now-build": "npm run build"
-  },
+  "description": "Adrian Rocke's personal website.",
+  "version": "0.2.0",
+  "author": "Adrian Rocke <me@adrianrocke.com>",
   "dependencies": {
-    "vue": "^2.6.6",
-    "vue-router": "^3.0.1"
+    "gatsby": "2.5.5",
+    "gatsby-image": "2.1.0",
+    "gatsby-plugin-manifest": "2.1.1",
+    "gatsby-plugin-offline": "2.1.1",
+    "gatsby-plugin-postcss": "2.0.7",
+    "gatsby-plugin-react-helmet": "3.0.12",
+    "gatsby-plugin-sharp": "2.0.37",
+    "gatsby-source-filesystem": "2.0.36",
+    "gatsby-transformer-sharp": "2.1.19",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-helmet": "5.2.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "fibers": "^3.1.1",
-    "sass": "^1.16.0",
-    "sass-loader": "^7.1.0",
-    "tailwindcss": "^0.7.4",
-    "vue-template-compiler": "^2.5.21"
+    "autoprefixer": "9.5.1",
+    "prettier": "1.17.1",
+    "tailwindcss": "1.0.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "now-build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arrocke/adrianrocke.com"
+  },
+  "bugs": {
+    "url": "https://github.com/arrocke/adrianrocke.com/issues"
   }
 }

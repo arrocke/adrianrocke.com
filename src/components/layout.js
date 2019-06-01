@@ -8,8 +8,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import Header from '~components/Header'
-import Footer from '~components/Footer'
+import Header from '~components/header'
+import Footer from '~components/footer'
 
 import "~styles/layout.css"
 

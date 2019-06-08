@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Adrian Rocke`,
     copyright: `Adrian Rocke`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `I'm a freelance software developer specializing in cloud applications.`,
+    author: `@adrianscript`,
+    image: `icons/icon-144x144.jpg`,
     navLinks: [
       {
         name: 'Home',
@@ -45,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Adrian Rocke`,
+        short_name: `Adrian Rocke`,
         start_url: `/`,
         background_color: `#22292f`,
         theme_color: `#22292f`,

@@ -40,6 +40,13 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/blog`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -54,7 +61,8 @@ module.exports = {
         icon: `src/assets/icons/me.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    `gatsby-transformer-remark`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

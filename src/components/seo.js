@@ -26,7 +26,6 @@ function SEO({ description, lang, meta, title, unfurlTitle }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const image = `https://adrianrocke.com/${site.siteMetadata.image}`
 
   return (
     <Helmet

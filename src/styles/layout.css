@@ -22,16 +22,20 @@ main {
   @apply border-white;
 }
 
+.container {
+  @apply p-6;
+}
+
+.container > * {
+  @apply max-w-5xl mx-auto;
+}
+
 .page-title {
-  @apply py-6 px-6 font-bold text-4xl leading-none;
+  @apply font-bold text-4xl leading-none;
 }
 
 .page-section {
-  @apply w-full px-6 pt-6 pb-10 bg-white text-black;
-}
-
-.inner-content {
-  @apply max-w-5xl mx-auto;
+  @apply pb-10 bg-white text-black;
 }
 
 .page-section + .page-section {
@@ -51,11 +55,7 @@ main {
 }
 
 @screen sm {
-  .page-title {
-    @apply px-22;
-  }
-
-  .page-section {
+  .container {
     @apply px-22;
   }
 }
@@ -69,12 +69,12 @@ main {
     margin-bottom: 2px;
   }
 
-  .page-title {
+  .container {
     @apply px-24;
   }
 
   .page-section {
-    @apply px-24 py-10;
+    @apply py-10;
   }
 }
 

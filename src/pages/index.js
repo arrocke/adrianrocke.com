@@ -6,8 +6,13 @@ import Layout from "~components/layout"
 import SEO from "~components/seo"
 
 const IndexPage = () => {
-  const { headshot, hero } = useStaticQuery(graphql`
+  const { headshot, hero, site } = useStaticQuery(graphql`
     query {
+      site {
+        siteMetadata {
+          description
+        }
+      }
       headshot: file(relativePath: { eq: "headshot.jpg" }) {
         childImageSharp {
           fixed(width: 192, height: 192) {
@@ -25,7 +30,7 @@ const IndexPage = () => {
     }
   `)
   return <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" unfurlTitle="Adrian Rocke" />
     <main className="relative flex items-stretch">
       <Img
         fluid={hero.childImageSharp.fluid}
@@ -46,7 +51,7 @@ const IndexPage = () => {
         </div>
         <div className="mt-8">
           <p className="text-center text-lg hover:text-white">
-            I'm a freelance software developer specializing in cloud applications.
+            {site.siteMetadata.description}
           </p>
         </div>
         <a href="mailto:me@adrianrocke.com" className="mt-8 border-white border-4 rounded-lg p-4 no-underline text-white font-bold">

@@ -30,7 +30,7 @@ const IndexPage = () => {
     }
   `)
   return <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" unfurlTitle="Adrian Rocke" />
     <main className="relative flex items-stretch">
       <Img
         fluid={hero.childImageSharp.fluid}

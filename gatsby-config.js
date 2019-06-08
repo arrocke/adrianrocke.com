@@ -4,7 +4,6 @@ module.exports = {
     copyright: `Adrian Rocke`,
     description: `I'm a freelance software developer specializing in cloud applications.`,
     author: `@adrianscript`,
-    image: `icons/icon-144x144.png`,
     navLinks: [
       {
         name: 'Home',

@@ -52,10 +52,34 @@ const MyWorkPage = () => {
               <span className="font-bold text-sm">BACKEND:</span> Express, Mongoose, Mongo
             </li>
             <li>
-              <span className="font-bold text-sm">FRONTEND:</span> Vue, Sass, Backbone, Handlebars
+              <span className="font-bold text-sm">FRONTEND:</span> Vue, Preact, Sass, Tailwind
             </li>
             <li>
-              <span className="font-bold text-sm">DEVELOPMENT:</span> Webpack, Mocha, Chai, Karma, Heroku
+              <span className="font-bold text-sm">DEVELOPMENT:</span> Webpack, Parcel, Typescript, Jest, Heroku
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="page-section">
+        <div className="inner-content">
+          <h2 className="section-title">
+            <span className="align-middle">Farm Entry</span>
+          </h2>
+          <a href="//farm-entry.now.sh" className="mt-2 inline-block text-blue-600 font-bold">farm-entry.now.sh</a>
+          <p className="paragraph">
+            Farm Entry seeks to streamline data collection for farms by empowering farm employees to input data on site
+            rather than sending it to the office on paper.
+          </p>
+          <h3 className="paragraph-title mt-6">Tech</h3>
+          <ul className="paragraph">
+            <li>
+              <span className="font-bold text-sm">BACKEND:</span> Apollo GraphQL, Mongo
+            </li>
+            <li>
+              <span className="font-bold text-sm">FRONTEND:</span> React, Tailwind
+            </li>
+            <li>
+              <span className="font-bold text-sm">DEVELOPMENT:</span> Webpack, Typescript, Jest, Now
             </li>
           </ul>
         </div>
